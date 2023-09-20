@@ -1,90 +1,83 @@
 package integracao;
-import java.util.*;
+
+import java.util.ArrayList;
+
 public class Aluno {
-	private int frequencia;
-	private float nota1;
-	private float nota2;
-	private float notaFinal;
-	private String plano = "Free";
-	private ArrayList<String> cursos = new ArrayList<String>();
-	
 
-	public int getFrequencia() {
-		return frequencia;
+  private int frequencia;
+  private float nota1;
+  private float nota2;
+  private float notaFinal;
+  private String plano = "Free";
+  private ArrayList<String> cursos = new ArrayList<String>();
 
-	}
+  public int getFrequencia() {
+    return frequencia;
+  }
 
-	public void setFrequencia(int frequencia) {
-		this.frequencia = frequencia;
-	}
+  public void setFrequencia(int frequencia) {
+    this.frequencia = frequencia;
+  }
 
-	public float getNota1() {
-		return nota1;
-	}
+  public float getNota1() {
+    return nota1;
+  }
 
-	public void setNota1(float nota1) {
-		this.nota1 = nota1;
-	}
+  public void setNota1(float nota1) {
+    this.nota1 = nota1;
+  }
 
-	public float getNota2() {
-		return nota2;
-	}
+  public float getNota2() {
+    return nota2;
+  }
 
-	public void setNota2(float nota2) {
-		this.nota2 = nota2;
-	}
+  public void setNota2(float nota2) {
+    this.nota2 = nota2;
+  }
 
-	public void setNotaFinal(float notaFinal) {
-		this.notaFinal = notaFinal;
-	}
+  public void setNotaFinal(float notaFinal) {
+    this.notaFinal = notaFinal;
+  }
 
-	public boolean calcularAprovacao() {
+  public boolean calcularAprovacao() {
+    float media;
+    if (frequencia < 75) {
+      return false;
+    } else {
+      media = (nota1 + nota2) / 2;
+      if (media < 30) {
+        return false;
+      } else {
+        if (media >= 70) {
+          return true;
+        } else {
+          if ((media + notaFinal) / 2 >= 50) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+    }
+  }
 
-		float media;
-		if (frequencia < 75) {
-			return false;
-		}
+  public void adquireCurso(String curso) {
+    this.cursos.add(curso);
 
-		else {
-			media = (nota1 + nota2) / 2;
-			if (media < 30) {
-				return false;
-			} else {
-				if (media >= 70) {
-					return true;
-				} else {
-					if ((media + notaFinal) / 2 >= 50) {
-						return true;
-					} else {
+    if (this.getCursos().size() > 11) {
+      this.setPlano("Premium");
+    }
+  }
 
-						return false;
+  public String getPlano() {
+    return plano;
+  }
 
-					}
+  public void setPlano(String plano) {
+    this.plano = plano;
+  }
 
-				}
-
-			}
-
-		}
-	}
-
-	public void adquireCurso(String curso) {
-
-		this.cursos.add(curso);
-		
-		if (this.getCursos().size() > 11) {
-			this.setPlano("Premium");
-		}
-		
-	}
-	public String getPlano() {
-		return plano;
-	}
-	public void setPlano(String plano) {
-		this.plano = plano;
-	}
-	public ArrayList<String> getCursos() {
-		return cursos;
-	}
-	
+  public ArrayList<String> getCursos() {
+    return cursos;
+  }
 }
