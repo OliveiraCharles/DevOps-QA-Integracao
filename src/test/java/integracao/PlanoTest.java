@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class AlunoTest {
+public class PlanoTest {
 
   Aluno aluno;
 
