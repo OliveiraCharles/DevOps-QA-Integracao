@@ -37,4 +37,17 @@ public class AlunoTest {
     assertEquals(11, aluno.getCursos().size());
     assertEquals("Free", aluno.getPlano());
   }
+
+  @Test
+  public void testeQuantidadeCursos() {
+    Aluno aluno = new Aluno();
+
+    Curso curso01 = new Curso("Teste I");
+    Curso curso02 = new Curso("Teste II");
+
+    aluno.adquireCurso(curso01);
+    aluno.adquireCurso(curso02);
+
+    assertEquals(aluno.getCursos().size(), 2);
+  }
 }

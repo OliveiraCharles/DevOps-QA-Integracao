@@ -2,6 +2,10 @@ package integracao;
 
 public class Plano {
 
+  public Plano() {
+    this.isPremium = false;
+  }
+
   private boolean isPremium = false;
 
   public boolean isPremium() {

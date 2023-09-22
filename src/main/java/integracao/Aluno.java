@@ -27,10 +27,4 @@ public class Aluno {
     return cursos;
   }
 
-  public void showCursos() {
-    for (Curso curso : cursos) {
-      curso.show();
-      System.out.println("");
-    }
-  }
 }

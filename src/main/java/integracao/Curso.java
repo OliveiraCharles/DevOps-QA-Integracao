@@ -59,10 +59,10 @@ public class Curso {
 
   public boolean calcularAprovacao() {
     float media;
-    if (frequencia < 75) {
+    if (getFrequencia() < 75) {
       return false;
     } else {
-      media = (nota1 + nota2) / 2;
+      media = (getNota1() + getNota2()) / 2;
       // System.out.println("Media: " + media);
       if (media < 30) {
         // System.out.println("Reprovado: Media < 30!" + media);
@@ -72,7 +72,7 @@ public class Curso {
           // System.out.println("Aprovado: Media >= 70!");
           return true;
         } else {
-          if ((media + notaFinal) / 2 >= 50) {
+          if ((media + getNotaFinal()) / 2 >= 50) {
             // System.out.println("Aprovado: Media2 >= 50!");
             return true;
           } else {
@@ -82,14 +82,5 @@ public class Curso {
         }
       }
     }
-  }
-
-  public void show() {
-    System.out.println("Nome: " + getNome());
-    System.out.println("\tNota 01:\t " + getNota1());
-    System.out.println("\tNota 02:\t " + getNota2());
-    System.out.println("\tNota Final:\t " + getNotaFinal());
-    System.out.println("\tFrequência:\t " + getFrequencia());
-    System.out.println("\tAprovação:\t " + calcularAprovacao());
   }
 }
