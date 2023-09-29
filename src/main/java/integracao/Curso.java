@@ -17,16 +17,8 @@ public class Curso {
     this.notaFinal = 0;
   }
 
-  public String getNome() {
-    return nome;
-  }
-
   public float getNotaFinal() {
     return notaFinal;
-  }
-
-  public void setNome(String nome) {
-    this.nome = nome;
   }
 
   public int getFrequencia() {
