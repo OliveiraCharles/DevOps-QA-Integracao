@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y maven git
 
 USER jenkins
 
-EXPOSE 8080
+EXPOSE 8081

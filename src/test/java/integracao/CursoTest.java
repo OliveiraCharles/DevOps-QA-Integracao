@@ -52,4 +52,10 @@ public class CursoTest {
     curso.setNotaFinal(69);
     assertEquals(false, curso.calcularAprovacao());
   }
+
+  @Test
+  public void testGetNome() {
+    curso = new Curso("Test");
+    assertEquals("Test", curso.getNome());
+  }
 }
