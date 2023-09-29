@@ -9,6 +9,10 @@ public class Curso {
 
   private String nome;
 
+  public String getNome() {
+    return nome;
+  }
+
   public Curso(String nome) {
     this.nome = nome;
     this.frequencia = 0;
