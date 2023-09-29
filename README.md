@@ -7,7 +7,7 @@
 Running the below command will start a Jenkins process in the <http://localhost:8080>
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 ## Running tests with Jenkins.war
