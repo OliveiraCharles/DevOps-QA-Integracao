@@ -134,3 +134,5 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java,maven,visualstudiocode
 
 Estudo-Jenkinswar/
+.env
+Config.md
