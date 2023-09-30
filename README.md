@@ -1,4 +1,10 @@
-# DevOps-QA-Integracao
+# DevOps & QA - Integração
+
+Automação de testes com Jenkins de uma aplicação em Java, utilizando  WebHooks do GitHub, Maven como gerenciador de pacotes e JaCoCo como gerenciador de relatórios.
+
+## KeyWords
+
+Jenkins, Java, WebHooks, GitHub, Maven, JaCoCo
 
 ## Running Jenkins with Docker
 
@@ -76,12 +82,23 @@ docker-compose up -d
 
 ## Coverage Tests
 
-![Coverage](img/2023-09-29-12-28-11.png)
+![Coverage](img/2023-09-29-21-24-32.png)
 
 ## Docs
 
-- FACENS - [ATDD - Template](https://facens-my.sharepoint.com/personal/charles_oliveira_facens_br/Documents/DevOps%20eQA/Template_ATDD_Com_Exemplo_v2022.xlsx?web=1)
+- [Template](https://facens-my.sharepoint.com/personal/charles_oliveira_facens_br/Documents/DevOps%20eQA/Template_ATDD_Com_Exemplo_v2022.xlsx?web=1)
 
-- FACENS - [ATDD - Relatório](https://facens-my.sharepoint.com/personal/charles_oliveira_facens_br/Documents/DevOps%20eQA/Tarefa%203%20-%20Desenvolvimento%20com%20ATDD.docx?web=1)
+- [Relatório](https://facens-my.sharepoint.com/personal/charles_oliveira_facens_br/Documents/DevOps%20eQA/Tarefa%203%20-%20Desenvolvimento%20com%20ATDD.docx?web=1)
 
+- [Vídeo](https://www.youtube.com/watch?v=m6VtSrxWU0Q)
+
+    |[Automação de testes com Jenkins](https://www.youtube.com/watch?v=m6VtSrxWU0Q)|
+    |:-|
+    |[![Video](img/2023-09-29-21-48-56.png)](https://www.youtube.com/watch?v=m6VtSrxWU0Q)|
+
+## Referencias
+
+- GitHub - [Criar webhooks](https://docs.github.com/pt/webhooks/using-webhooks/creating-webhooks)
+- Jenkins - [Gatilho de WebHooks do GitHub para sondagem GITScm](https://plugins.jenkins.io/github/)
 - Jenkins - [Installing war file](https://www.jenkins.io/doc/book/installing/war-file/)
+- Jenkins - [User Handbook](https://www.jenkins.io/user-handbook.pdf)
