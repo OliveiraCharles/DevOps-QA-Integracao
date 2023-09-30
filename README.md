@@ -13,12 +13,12 @@ Jenkins, Java, WebHooks, GitHub, Maven, JaCoCo
 Running the below command will start a Jenkins process in the <http://localhost:8080>
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 ## Running tests with Jenkins.war
 
-1. Baixe o arquivo [Jenkins WAR](https://www.jenkins.io/download) mais recente para um diretório em sua máquina `C:/DEV/Tools/Jenkins`
+1. Baixe o arquivo [Jenkins WAR](https://www.jenkins.io/download) mais recente para um diretório em sua máquina `C:/DEV/Tools/Jenkins`.
 
 2. Abra uma janela de terminal/prompt de comando para o diretório `C:/DEV/Tools/Jenkins`
 
